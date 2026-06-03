@@ -40,7 +40,7 @@ export function renderOrderSummary(){
                     ${matchingProduct.name}
                   </div>
                   <div class="product-price">
-                    $${matchingProduct.getPrice()}
+                    ${matchingProduct.getPrice()}
                   </div>
                   <div class="product-quantity">
                     <span>
@@ -78,7 +78,7 @@ export function renderOrderSummary(){
 
           const dateString=deliveryDate.format('dddd, MMMM D');
 
-          const priceString=deliveryOption.priceCents === 0 ? 'FREE ' : `$${formatCurrency(deliveryOption.priceCents)} -`;
+          const priceString=deliveryOption.priceCents === 0 ? 'FREE ' : `${formatCurrency(deliveryOption.priceCents)} -`;
           const isChecked=deliveryOption.id === cartItem.deliveryOptionId;
           html +=
           `
